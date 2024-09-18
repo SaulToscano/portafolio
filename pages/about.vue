@@ -59,10 +59,9 @@
             <!-- Skills -->
             <div class="skills padd-15">
               <div class="row">
-                <fragments-skill name="Figma" percentage="80" />
-                <fragments-skill name="HTML" percentage="50" />
-                <fragments-skill name="CSS" percentage="45" />
-                <fragments-skill name="Bootstrap" percentage="50" />
+                <fragments-skill name="Frontend" percentage="80" />
+                <fragments-skill name="Backend" percentage="80" />
+                <fragments-skill name="SysAdmin" percentage="70" />
               </div>
             </div>
 
@@ -74,112 +73,32 @@
 
               <div class="row">
 
-                <el-tooltip class="box-item" effect="dark" content="HTML" placement="top">
-                  <div class="tool-item padd-15">
-                    <Icon name="vscode-icons:file-type-html" />
-                  </div>
-                </el-tooltip>
-
-
-                <div class="tool-item padd-15">
-                  <Icon name="vscode-icons:file-type-css" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:java" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="devicon:csharp" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="vscode-icons:file-type-js-official" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:react" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="vscode-icons:file-type-vue" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="vscode-icons:file-type-angular" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="devicon:nodejs" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="simple-icons:express" style="color: black;" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:nestjs" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:swagger" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:jest" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="devicon:npm" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:yarn" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:element" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:mantine-icon" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="skill-icons:bootstrap" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="simple-icons:fontawesome" style="color: #214087;" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="simple-icons:iconify" style="color: black;" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:visual-studio-code" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="devicon:git" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="mdi:github" style="color: #181616;" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:docker-icon" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="devicon:jiraalign" />
-                </div>
-
-                <div class="tool-item padd-15">
-                  <Icon name="logos:confluence" />
-                </div>
+                <fragments-technologies name="vscode-icons:file-type-html" tooltip="HTML" />
+                <fragments-technologies name="vscode-icons:file-type-css" tooltip="CSS" />
+                <fragments-technologies name="logos:java" tooltip="Java" />
+                <fragments-technologies name="devicon:csharp" tooltip="C#" />
+                <fragments-technologies name="vscode-icons:file-type-js-official" tooltip="JS" />
+                <fragments-technologies name="logos:react" tooltip="React" />
+                <fragments-technologies name="vscode-icons:file-type-vue" tooltip="Vue" />
+                <fragments-technologies name="vscode-icons:file-type-angular" tooltip="Angular" />
+                <fragments-technologies name="devicon:nodejs" tooltip="Node" />
+                <fragments-technologies name="simple-icons:express" tooltip="Express" color="black" />
+                <fragments-technologies name="logos:nestjs" tooltip="NestJS" />
+                <fragments-technologies name="logos:swagger" tooltip="Swagger" />
+                <fragments-technologies name="logos:jest" tooltip="Jest" />
+                <fragments-technologies name="devicon:npm" tooltip="NPM" />
+                <fragments-technologies name="logos:yarn" tooltip="Yarn" />
+                <fragments-technologies name="logos:element" tooltip="Element" />
+                <fragments-technologies name="logos:mantine-icon" tooltip="Mantine" />
+                <fragments-technologies name="skill-icons:bootstrap" tooltip="Bootstrap" />
+                <fragments-technologies name="simple-icons:fontawesome" tooltip="Fontawesome" color="#214087" />
+                <fragments-technologies name="simple-icons:iconify" tooltip="Iconify" color="black" />
+                <fragments-technologies name="logos:visual-studio-code" tooltip="Visual Studio" />
+                <fragments-technologies name="devicon:git" tooltip="Git" />
+                <fragments-technologies name="mdi:github" tooltip="Github" color="#181616" />
+                <fragments-technologies name="logos:docker-icon" tooltip="Docker" />
+                <fragments-technologies name="devicon:jiraalign" tooltip="Jira" />
+                <fragments-technologies name="logos:confluence" tooltip="Confluence" />
 
               </div>
             </div>
