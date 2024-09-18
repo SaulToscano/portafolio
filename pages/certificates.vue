@@ -8,7 +8,7 @@
       </div>
 
       <FragmentsCertifications />
-      <FragmentsAwards />
+      <!-- <FragmentsAwards /> -->
     </div>
   </section>
 </template>

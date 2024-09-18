@@ -35,36 +35,36 @@
 import { ref } from 'vue'
 
 const certifications = [
-  {
-    title: 'Figma UI/UX Design Advanced',
-    institution: 'Udemy',
-    dates: 'Jul 24 - Aug 1, 2024',
-    image: '/images/certifications/certificate5.jpg'
+{
+    title: 'HTML',
+    institution: 'Programming hub',
+    dates: 'June 2022',
+    image: '/images/certifications/certificate_1.jpg'
   },
   {
-    title: 'Figma UI/UX Design Essentials',
-    institution: 'Udemy',
-    dates: 'Jul 03 - Jul 24, 2024',
-    image: '/images/certifications/certificate4.jpg'
+    title: 'Javascript',
+    institution: 'Programming hub',
+    dates: 'June 2022',
+    image: '/images/certifications/certificate_2.jpg'
   },
   {
-    title: 'The Web Developer Bootcamp',
-    institution: 'Udemy',
-    dates: 'Jan 17 - Jul 23, 2024',
-    image: '/images/certifications/certificate3.jpg'
+    title: 'PHP',
+    institution: 'Programming hub',
+    dates: 'June 2022',
+    image: '/images/certifications/certificate_3.jpg'
   },
   {
-    title: 'English: Level II',
-    institution: 'Lang-Lab',
-    dates: 'Sep 10 - Dec 12, 2022',
-    image: '/images/certifications/certificate2.jpg'
+    title: "Backend development & API's",
+    institution: 'Freecode camp',
+    dates: 'June 2022',
+    image: '/images/certifications/certificate_4.jpg'
   },
   {
-    title: 'English: Level I',
-    institution: 'Lang-Lab',
-    dates: 'May 14 - Aug 15, 2022',
-    image: '/images/certifications/certificate1.jpg'
-  }
+    title: 'Responsive web design',
+    institution: 'Freecode camp',
+    dates: 'June 2022',
+    image: '/images/certifications/certificate_5.jpg'
+  },
 ]
 
 const popupVisible = ref(false)

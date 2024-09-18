@@ -13,15 +13,15 @@
 							</p>
 
 							<div class="row">
-								<a href="https://www.linkedin.com/in/abril-ramirez-flores-71a26b275/" class="btn">
+								<a href="https://www.linkedin.com/in/saul-toscano-110045232/" target="_blank" class="btn">
 									<Icon name="ri:linkedin-fill" size="36px" />
 								</a>
-								<a href="https://github.com/iscRamirezAbril" class="btn">
+								<a href="https://github.com/SaulToscano" target="_blank" class="btn">
 									<Icon name="mdi:github" size="36px" />	
 								</a>
 							</div>
 
-							<a href="#contact" class="btn hire-me">Contact</a>
+							<nuxt-link to="/contact" class="btn hire-me">Contact</nuxt-link>
 						</div>
 
 						<div class="home-img padd-15">
