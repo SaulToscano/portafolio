@@ -44,7 +44,7 @@ onMounted(() => {
   const { $typed } = useNuxtApp();
 
   $typed(typedElement.value, {
-    strings: ["UI/UX Designer", "Fullstack Developer"],
+    strings: ["Fullstack Developer"],
     typeSpeed: 65,
     backSpeed: 65,
     loop: true,

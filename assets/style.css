@@ -847,6 +847,7 @@ h3.my-profession {
   display: inline-block;
 }
 
+.contact-icon,
 .contact .contact-info-item .icon .fa,
 .contact .contact-info-item .icon .fa-brands {
   font-size: 25px;

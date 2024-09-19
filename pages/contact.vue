@@ -13,23 +13,29 @@
       <div class="row">
         <!-- Contact info item start -->
         <div class="contact-info-item padd-15">
-          <div class="icon"><i class="fa fa-envelope"></i></div>
+          <div class="icon"><Icon name="mdi:envelope" class="contact-icon" /></div>
           <h4>Email</h4>
-          <p>isc.ramirez_abril@outlook.com</p>
+          <p>saul.toscano.robles@gmail.com</p>
         </div>
         <!-- Contact info item end -->
         <!-- Contact info item start -->
         <div class="contact-info-item padd-15">
-          <div class="icon"><i class="fa-brands fa-github"></i></div>
+          <div class="icon"><Icon name="mdi:github" class="contact-icon" /></div>
           <h4>Github Page</h4>
-          <p>github.com/iscRamirezAbril</p>
+          <p>
+            <a href="https://github.com/SaulToscano" target="_blank" style="all: unset; cursor: pointer;">github.com/SaulToscano</a>
+          </p>
         </div>
         <!-- Contact info item end -->
         <!-- Contact info item start -->
         <div class="contact-info-item padd-15">
-          <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="icon"><Icon name="ri:linkedin-fill" class="contact-icon" /></div>
           <h4>Connect with me</h4>
-          <p>www.linkedin.com/in/abril-ramirez-flores-71a26b275</p>
+          <p>
+            <a href="https://www.linkedin.com/in/saul-toscano-110045232/" target="_blank" style="all: unset; cursor: pointer;">
+              www.linkedin.com/in/saul-toscano-110045232/
+            </a>
+          </p>
         </div>
         <!-- Contact info item end -->
       </div>
@@ -38,44 +44,7 @@
       <h4 class="contact-sub-title padd-15">Fill in the form below</h4>
 
       <!-- Contact form start -->
-      <div class="row">
-        <form action="https://formspree.io/f/mjkbrvyo" method="POST" class="contact-form padd-15">
-          <div class="row">
-            <div class="form-item col-6 padd-15">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name" name="name">
-              </div>
-            </div>
-            <div class="form-item col-6 padd-15">
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email" name="email">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-item col-12 padd-15">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" name="subject">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-item col-12 padd-15">
-              <div class="form-group">
-                <textarea class="form-control" id="" placeholder="Message" name="message"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-item col-12 padd-15">
-              <button type="submit" class="btn">Send Message</button>
-            </div>
-          </div>
-        </form>
-      </div>
+      <Form />
       <!-- Contact form end -->
     </div>
   </section>
