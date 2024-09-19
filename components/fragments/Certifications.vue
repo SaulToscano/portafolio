@@ -35,7 +35,7 @@
 import { ref } from 'vue'
 
 const certifications = [
-{
+  {
     title: 'HTML',
     institution: 'Programming hub',
     dates: 'June 2022',
