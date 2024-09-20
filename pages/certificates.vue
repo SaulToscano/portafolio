@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="section-title padd-15">
-          <h2>Certificates</h2>
+          <h2 v-t="'pages.certificates.certificates'" />
         </div>
       </div>
 

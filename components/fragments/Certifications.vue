@@ -11,7 +11,7 @@
     <!-- Certifications Content -->
     <div class="certifications-content padd-15">
       <div class="row">
-        <h3 class="title">Certifications</h3>
+        <h3 class="title" v-t="'pages.certificates.certifications'" />
         <div class="row">
           <div v-for="(cert, index) in certifications" :key="index" class="certification-item padd-15" @click="openPopup(cert.image)">
             <div class="certification-item-inner shadow-dark">
@@ -20,7 +20,7 @@
               </div>
               <div class="certification-info">
                 <h4>{{ cert.title }}</h4>
-                <p>Institution: {{ cert.institution }}</p>
+                <p>{{ $t('pages.certificates.institution') }}: {{ cert.institution }}</p>
                 <p>{{ cert.dates }}</p>
               </div>
             </div>

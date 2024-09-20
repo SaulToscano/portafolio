@@ -4,13 +4,9 @@
 					<div class="row">
 
 						<div class="home-info padd-15">
-							<h3 class="hello">Hello, my name is <span class="name">Saul Toscano</span></h3>
-							<h3 class="my-profession">I'm a <span ref="typedElement" class="typing"></span></h3>
-							<p>
-								Full-stack Developer, I am a serious person, committed to my work, a bit of a perfectionist, 
-								I like my work to be of quality, and I always look for continuous improvement, 
-								with extensive experience in web development and microservices,
-							</p>
+							<h3 class="hello">{{ $t('pages.home.presentation') }} <span class="name">Saul Toscano</span></h3>
+							<h3 class="my-profession">{{ $t('pages.home.im') }} <span ref="typedElement" class="typing"></span></h3>
+							<p>{{ $t('pages.home.description') }}</p>
 
 							<div class="row">
 								<a href="https://www.linkedin.com/in/saul-toscano-110045232/" target="_blank" class="btn">
@@ -21,15 +17,12 @@
 								</a>
 							</div>
 
-							<nuxt-link to="/contact" class="btn hire-me">Contact</nuxt-link>
+							<nuxt-link to="/contact" class="btn hire-me">{{ $t('pages.home.contact') }}</nuxt-link>
 						</div>
 
 						<div class="home-img padd-15">
 							<NuxtImg src="/images/myPhoto1.jpg" alt="profile-picture" />
 						</div>
-					</div>
-					<div class="row">
-
 					</div>
 				</div>
 			</section>
@@ -37,20 +30,45 @@
 
 <script setup>
 import { useHead } from 'nuxt/app';
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
+import { useI18n } from 'vue-i18n'
 
+const { t, locale } = useI18n()
 const typedElement = ref(null);
+let typedInstance = null  // Keep track of Typed.js instance
 
-onMounted(() => {
-  const { $typed } = useNuxtApp();
+// Function to initialize Typed.js
+const initializeTyped = () => {
+  const { $typed } = useNuxtApp()
 
-  $typed(typedElement.value, {
-    strings: ["Fullstack Developer"],
+  // Get the translated strings
+  const strings = [
+		t('pages.home.typed')
+  ]
+
+  // Destroy previous instance if it exists to avoid multiple initializations
+  if (typedInstance) {
+    typedInstance.destroy()
+  }
+
+  // Initialize Typed.js with translated strings
+  typedInstance = $typed(typedElement.value, {
+    strings: strings,
     typeSpeed: 65,
     backSpeed: 65,
-    loop: true,
-  });
-});
+    loop: true
+  })
+}
+
+onMounted(() => {
+  // Initialize Typed.js when component is mounted
+  initializeTyped()
+})
+
+// Watch for changes in locale and reinitialize Typed.js
+watch(locale, () => {
+  initializeTyped()
+})
 
 useHead({
   title: "Home",

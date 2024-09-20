@@ -1,0 +1,55 @@
+{
+  "aside": {
+    "home": "Inicio",
+    "about": "Acerca de mí",
+    "certificates": "Certificados",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "pages": {
+    "home": {
+      "presentation": "Hola, mi nombre es",
+      "im": "Soy un",
+      "typed": "Desarrollador Full-stack",
+      "description": "Desarrollador Full-stack, soy una persona seria, comprometida con mi trabajo, un poco perfeccionista, Me gusta que mi trabajo sea de calidad, y siempre busco la mejora continua, con amplia experiencia en desarrollo web y microservicios.",
+      "contact": "Contacto"
+    },
+    "about": {
+      "about": "Sobre mi",
+      "im": "Soy",
+      "fullstack": "Desarrollador Full-stack",
+      "description": "Soy ingeniero en sistemas computacionales y soy desarrollador fullstack, web, api's y mobile. Siempre buscando las mejores herramientas y prácticas para brindarles a mis clientes los mejores productos del mercado, comprometido y dedicado, buscando siempre ser mejor cada día.",
+      "birthday": "Año de nacimiento",
+      "birthday_date": "11 de Agosto, 1996",
+      "age": "Edad",
+      "location": "Ubicación",
+      "city": "Ciudad",
+      "degree": "Titulo",
+      "degree_p": "Ing. Sistemas Computacionales",
+      "freelance_p": "Disponible",
+      "cv": "Ver CV",
+      "technologies": "Tecnologias y herramientas",
+      "education": "Educacion",
+      "uni_title": "Instituto Tecnologico de Tijuana",
+      "uni_p": "En estos 4 años de carrera, mejoré mis habilidades en programación en C# y obtuve otras nuevas; como topicos de HTML, React y SQL Server.",
+      "bootcamp_p": "En este bootcamp de un año, amplié mis conocimientos de HTML, JS y CSS, además de mejorar el desarrollo React, asíncrono y backend.",
+      "experience": "Experiencia",
+      "vasoking_p": "En mi puesto de trabajo estuve a cargo de captura, creación de api's y microservicio usando java, springboot, configuración y mantenimiento de bases de datos, mantenimiento de servidores Ubuntu, despliegue de aplicaciones en servidor, etc.",
+      "sbc_p": "En este trabajo estuve a cargo de la página web, como administrador web Ecommerce desarrolle los productos, nuevas páginas, precios, banners, nuevas implementaciones, portales de pago, etc. Como mis responsabilidades como backend cree módulos en js y ts en express y nest, también mantuve apis en estos frameworks, y en C# y java."
+    },
+    "certificates": {
+      "certificates": "Certificados",
+      "certifications": "Certificaciones",
+      "institution": "Institucion"
+    },
+    "contact": {
+      "title": "Contactame",
+      "question": "Alguna pregunta ?",
+      "contact": "Aqui es donde puedes contactarme:",
+      "connect": "Contacta conmigo",
+      "send": "Enviame un e-mail",
+      "form": "Llena el formularo de abajo",
+      "button": "Enviar mensaje"
+    }
+  }
+}

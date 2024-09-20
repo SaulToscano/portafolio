@@ -32,7 +32,7 @@
 
       <div class="row">
         <div class="form-item col-12 padd-15">
-          <button style="cursor: pointer;" type="submit" class="btn">Send Message</button>
+          <button style="cursor: pointer;" type="submit" class="btn" v-t="'pages.contact.button'" />
         </div>
       </div>
     </form>

@@ -1,0 +1,55 @@
+{
+  "aside": {
+    "home": "Home",
+    "about": "About",
+    "certificates": "Certificates",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "pages": {
+    "home": {
+      "presentation": "Hello, my name is",
+      "im": "I'm a",
+      "typed": "Fullstack Developer",
+      "description": "Full-stack Developer, I am a serious person, committed to my work, a bit of a perfectionist, I like my work to be of quality, and I always look for continuous improvement, with extensive experience in web development and microservices,",
+      "contact": "Contact"
+    },
+    "about": {
+      "about": "About Me",
+      "im": "I'm",
+      "fullstack": "Fullstack Developer",
+      "description": "I'm a Computer Systems Engineering graduated, and i'm a fullstack developer, web, api's, and mobile developer. Always searching for the best tools and practices to give my clients the best products in the market, committed and dedicated always looking to be better everyday",
+      "birthday": "Birthday",
+      "birthday_date": "August 11, 1996",
+      "age": "Age",
+      "location": "Location",
+      "city": "City",
+      "degree": "Degree",
+      "degree_p": "Computer Systems Engr.",
+      "freelance_p": "Available",
+      "cv": "View CV",
+      "technologies": "Technologies & Tools",
+      "education": "Education",
+      "uni_title": "Tijuana Technological Institute",
+      "uni_p": "In this 4 years of career, I improved my skills on C# programming and obtained new ones; like HTML, React and SQL Server topics.",
+      "bootcamp_p": "In this one-year bootcamp, I expanded my knowledge of HTML, JS, and CSS, in addition to improving React, asynchronous, and backend development",
+      "experience": "Experience",
+      "vasoking_p": "In my job position, I was in charge of capture of creation of api's and microservice using java, springboot, database configuration and maintenance, Ubuntu server maintenance, applications deployment on server, etc.",
+      "sbc_p": "In this job i was in charge of the web page, as a Web manager of the Ecommerce webpage i develop the products, new pages, prices, banners, new implementations, payment portals, etc. As my responsabilities as backend i create modules in js and ts in express and nest, also i maintenance apis in this frameworks, and in C# and java."
+    },
+    "certificates": {
+      "certificates": "Certificates",
+      "certifications": "Certifications",
+      "institution": "Institution"
+    },
+    "contact": {
+      "title": "Contact Me",
+      "question": "Do you have any questions ?",
+      "contact": "Here where you can contact me:",
+      "connect": "Connect with me",
+      "send": "Send Me An Email",
+      "form": "Fill in the form below",
+      "button": "Send Message"
+    }
+  }
+}
