@@ -120,7 +120,7 @@
                       <h4 class="timeline-title">Tijuana Technological Institute</h4>
                       <p class="timeline-text">
                         In this 4 years of career, I improved my skills on C# programming and obtained new ones;
-                        like HTML, Figma and SQL Server topics.
+                        like HTML, React and SQL Server topics.
                       </p>
                     </div>
                     <div class="timeline-item">

@@ -6,7 +6,8 @@
 
 <script setup>
 import '~/assets/style.css'
-import '~/assets/skins/color-4.css'
+import '~/assets/color-4.css'
+import '~/assets/style-switcher.css'
 
 useSeoMeta({
   title: 'Portafolio',
