@@ -82,7 +82,7 @@
                 <fragments-technologies name="vscode-icons:file-type-vue" tooltip="Vue" />
                 <fragments-technologies name="vscode-icons:file-type-angular" tooltip="Angular" />
                 <fragments-technologies name="devicon:nodejs" tooltip="Node" />
-                <fragments-technologies name="simple-icons:express" tooltip="Express" color="black" />
+                <fragments-technologies name="simple-icons:express" tooltip="Express" :color="isDark ? 'white' : 'black'" />
                 <fragments-technologies name="logos:nestjs" tooltip="NestJS" />
                 <fragments-technologies name="logos:swagger" tooltip="Swagger" />
                 <fragments-technologies name="logos:jest" tooltip="Jest" />
@@ -92,10 +92,10 @@
                 <fragments-technologies name="logos:mantine-icon" tooltip="Mantine" />
                 <fragments-technologies name="skill-icons:bootstrap" tooltip="Bootstrap" />
                 <fragments-technologies name="simple-icons:fontawesome" tooltip="Fontawesome" color="#214087" />
-                <fragments-technologies name="simple-icons:iconify" tooltip="Iconify" color="black" />
+                <fragments-technologies name="simple-icons:iconify" tooltip="Iconify" :color="isDark ? 'white' : 'black'" />
                 <fragments-technologies name="logos:visual-studio-code" tooltip="Visual Studio" />
                 <fragments-technologies name="devicon:git" tooltip="Git" />
-                <fragments-technologies name="mdi:github" tooltip="Github" color="#181616" />
+                <fragments-technologies name="mdi:github" tooltip="Github" :color="isDark ? 'white' : '#181616'" />
                 <fragments-technologies name="logos:docker-icon" tooltip="Docker" />
                 <fragments-technologies name="devicon:jiraalign" tooltip="Jira" />
                 <fragments-technologies name="logos:confluence" tooltip="Confluence" />
@@ -185,6 +185,13 @@
 </template>
 
 <script setup>
+import {ref, onMounted} from 'vue'
+const isDark = ref(false)
+onMounted(() => {
+  const savedDarkMode = localStorage.getItem('darkMode');
+  isDark.value = savedDarkMode
+})
+
 const openPDF = () => {
   window.open('/Resume.pdf', '_blank');
 };
