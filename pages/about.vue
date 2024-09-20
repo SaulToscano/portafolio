@@ -185,6 +185,7 @@
 </template>
 
 <script setup>
+import { useHead } from 'nuxt/app';
 import {ref, onMounted} from 'vue'
 const isDark = ref(false)
 onMounted(() => {
@@ -195,4 +196,14 @@ onMounted(() => {
 const openPDF = () => {
   window.open('/Resume.pdf', '_blank');
 };
+
+useHead({
+  title: "About me",
+  meta: [
+    {
+      name: "About me",
+      content: "Learn all about me"
+    }
+  ]
+})
 </script>

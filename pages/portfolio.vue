@@ -14,3 +14,17 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { useHead } from 'nuxt/app';
+
+useHead({
+  title: "Portfolio",
+  meta: [
+    {
+      name: "Portfolio",
+      content: "My developer portfolio"
+    }
+  ]
+})
+</script>

@@ -49,3 +49,17 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { useHead } from 'nuxt/app';
+
+useHead({
+  title: "Contact me",
+  meta: [
+    {
+      name: "Contact me",
+      content: "Send me a message!"
+    }
+  ]
+})
+</script>

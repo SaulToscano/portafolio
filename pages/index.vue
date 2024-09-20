@@ -36,6 +36,7 @@
 </template>
 
 <script setup>
+import { useHead } from 'nuxt/app';
 import { onMounted, ref } from 'vue';
 
 const typedElement = ref(null);
@@ -50,4 +51,14 @@ onMounted(() => {
     loop: true,
   });
 });
+
+useHead({
+  title: "Home",
+  meta: [
+    {
+      name: "Home",
+      content: "My homepage"
+    }
+  ]
+})
 </script>

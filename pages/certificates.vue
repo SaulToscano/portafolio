@@ -11,3 +11,17 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { useHead } from 'nuxt/app';
+
+useHead({
+  title: "Certificates",
+  meta: [
+    {
+      name: "Certificates",
+      content: "My developer certificates"
+    }
+  ]
+})
+</script>
