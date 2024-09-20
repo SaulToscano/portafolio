@@ -3,9 +3,6 @@
     <div class="logo">
       <nuxt-link to="/"><span>S</span>aul</nuxt-link>
     </div>
-    <div class="nav-toggler">
-      <span></span>
-    </div>
     <ul class="nav">
       <li><nuxt-link to="/" active-class="active"><Icon name="ic:round-home" size="1.5em" />Home</nuxt-link></li>
       <li><nuxt-link to="/about" active-class="active"><Icon name="mdi:user" size="1.5em" />About</nuxt-link></li>

@@ -8,7 +8,6 @@
       </div>
 
       <FragmentsCertifications />
-      <!-- <FragmentsAwards /> -->
     </div>
   </section>
 </template>

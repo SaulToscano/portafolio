@@ -4,13 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     pageTransition: {name: 'page', mode: 'default'},
-    head: {
-      script: [
-        /* {src: "https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"}, */
-        /* {src: "script.js", type: "text/javascript", onload: "true"},
-        {src: "style-switcher.js", type: "text/javascript"}, */
-      ]
-    }
   },
   modules: [
     '@element-plus/nuxt',

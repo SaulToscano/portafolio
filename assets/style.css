@@ -210,7 +210,7 @@ ul {
 }
 
 .aside .logo a span {
-  font-family: "Clicker Script", cursive;
+  font-family: "Comic Sans", cursive;
   font-size: 40px;
 }
 
@@ -347,7 +347,7 @@ h3.hello {
 }
 
 h3.hello span {
-  font-family: "Clicker Script", cursive;
+  font-family: "Comic Sans", cursive;
   font-size: 30px;
   font-weight: 700;
   color: var(--skin-color);
@@ -412,7 +412,7 @@ h3.my-profession {
   height: 80px;
   width: 80px;
   right: -20px;
-  bottom: -20px;
+  bottom: -5px;
   border-bottom: 10px solid var(--skin-color);
   border-right: 10px solid var(--skin-color);
 }
