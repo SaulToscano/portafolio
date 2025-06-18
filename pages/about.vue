@@ -206,7 +206,7 @@ import { useI18n } from 'vue-i18n';
 const { getLocaleCookie } = useI18n()
 
 const openPDF = () => {
-  getLocaleCookie() === 'en' ? window.open('/Resume.pdf', '_blank') : window.open('/Resume.pdf', '_blank');
+  getLocaleCookie() === 'en' ? window.open('/Resume_EN.pdf', '_blank') : window.open('/Resume_ES.pdf', '_blank');
 };
 
 useHead({
