@@ -19,9 +19,12 @@ export default defineNuxtConfig({
       { code: 'en', name: 'English', file: 'en.json' },
       { code: 'es', name: 'Spanish', file: 'es.json' }
     ],
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
     defaultLocale: 'es', // Default locale
-    lazy: false, // Enable lazy loading of translations
-    langDir: 'locales/', // Path to the translation files
+    lazy: true, // Enable lazy loading of translations
+    //langDir: 'locales/', // Path to the translation files
     strategy: 'no_prefix', // URL strategy (prefixes /en/ or /fr/ in routes)
     detectBrowserLanguage: {
       useCookie: true,
