@@ -8,17 +8,17 @@
   },
   "pages": {
     "home": {
-      "presentation": "Hello, my name is",
+      "presentation": "Hi, I'm",
       "im": "I'm a",
       "typed": "Fullstack Developer",
-      "description": "Full-stack Developer, I am a serious person, committed to my work, a bit of a perfectionist, I like my work to be of quality, and I always look for continuous improvement, with extensive experience in web development and microservices,",
+      "description": "I'm a Full-Stack Developer with extensive experience in web development and microservices. I'm a committed professional, focused on quality and continuous improvement. My attention to detail and perfectionist mindset drive me to always deliver the best possible results.",
       "contact": "Contact"
     },
     "about": {
       "about": "About Me",
       "im": "I'm",
       "fullstack": "Fullstack Developer",
-      "description": "I'm a Computer Systems Engineering graduated, and i'm a fullstack developer, web, api's, and mobile developer. Always searching for the best tools and practices to give my clients the best products in the market, committed and dedicated always looking to be better everyday",
+      "description": "A Computer Systems Engineer with expertise in web development, APIs, and mobile apps. I focus on selecting the right tools and best practices to deliver top‑quality digital products. I also create and prototype UI/UX designs in Figma to ensure clear, interactive visual experiences. Committed and dedicated, I strive to improve every day and exceed client expectations.",
       "birthday": "Birthday",
       "birthday_date": "August 11, 1996",
       "age": "Age",
@@ -31,11 +31,19 @@
       "technologies": "Technologies & Tools",
       "education": "Education",
       "uni_title": "Tijuana Technological Institute",
-      "uni_p": "In this 4 years of career, I improved my skills on C# programming and obtained new ones; like HTML, React and SQL Server topics.",
-      "bootcamp_p": "In this one-year bootcamp, I expanded my knowledge of HTML, JS, and CSS, in addition to improving React, asynchronous, and backend development",
+      "uni_p_1": "• Over four years, I strengthened my C# programming skills and learned HTML, React, and SQL Server.",
+      "uni_p_2": "• Participated in academic projects that emphasized best practices and software architecture.",
+      "bootcamp_p_1": "• In this intensive one-year program, I deepened my knowledge of HTML, JavaScript, and CSS, and honed my skills in React, asynchronous programming, and backend development.",
+      "bootcamp_p_2": "• Built full-stack applications integrating front-end, REST APIs, and databases.",
       "experience": "Experience",
-      "vasoking_p": "In my job position, I was in charge of capture of creation of api's and microservice using java, springboot, database configuration and maintenance, Ubuntu server maintenance, applications deployment on server, etc.",
-      "sbc_p": "In this job i was in charge of the web page, as a Web manager of the Ecommerce webpage i develop the products, new pages, prices, banners, new implementations, payment portals, etc. As my responsabilities as backend i create modules in js and ts in express and nest, also i maintenance apis in this frameworks, and in C# and java."
+      "vasoking_p_1": "• Designed and implemented APIs and microservices using Java and Spring Boot.",
+      "vasoking_p_2": "• Configured and maintained SQL and NoSQL databases.",
+      "vasoking_p_3": "• Managed Ubuntu servers and deployed applications in production environments.",
+      "sbc_p_1": "• Developed and maintained the eCommerce website: product management, pages, pricing systems, banners, and payment gateways.",
+      "sbc_p_2": "• On the backend, built modules in JavaScript and TypeScript with Express and NestJS, and maintained APIs in C# and Java.",
+      "wit_p_1": "• Led Figma interface design and prototyping.",
+      "wit_p_2": "• Developed frontend and backend APIs and websites to client specifications.",
+      "wit_p_3": "• Handled DevOps tasks: provisioning and monitoring services on AWS, and setting up development and production environments."
     },
     "certificates": {
       "certificates": "Certificates",

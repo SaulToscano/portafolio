@@ -21,7 +21,7 @@
         <!-- Contact info item start -->
         <div class="contact-info-item padd-15">
           <div class="icon"><Icon name="mdi:github" class="contact-icon" /></div>
-          <h4>Github Page</h4>
+          <h4>Github</h4>
           <p>
             <a href="https://github.com/SaulToscano" target="_blank" style="all: unset; cursor: pointer;">github.com/SaulToscano</a>
           </p>
@@ -51,7 +51,7 @@
 </template>
 
 <script setup>
-import { useHead } from 'nuxt/app';
+import { useHead } from '#imports';
 
 useHead({
   title: "Contact me",

@@ -9,23 +9,14 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { onMounted } from 'vue'
 
-const { locale } = useI18n()
+const { locale, setLocaleCookie } = useI18n()
 
 // Function to set the locale and save it to localStorage
 const setLocale = (newLocale) => {
-  locale.value = newLocale
-  localStorage.setItem('preferredLocale', newLocale) // Save to localStorage
+  locale.value = newLocale;
+  setLocaleCookie(newLocale);
 }
-
-// Check localStorage for a saved language preference
-onMounted(() => {
-  const savedLocale = localStorage.getItem('preferredLocale')
-  if (savedLocale) {
-    locale.value = savedLocale // Load the saved locale if available
-  }
-})
 </script>
 
 <style scoped>

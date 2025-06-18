@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Popup Image -->
-    <div v-if="popupVisible" class="popup-img">
+    <div v-if="popupVisible && !currentPdf" class="popup-img">
       <span class="close-btn" @click="closePopup">
         <Icon name="material-symbols:close" />
       </span>
@@ -12,8 +12,13 @@
     <div class="certifications-content padd-15">
       <div class="row">
         <h3 class="title" v-t="'pages.certificates.certifications'" />
-        <div class="row">
-          <div v-for="(cert, index) in certifications" :key="index" class="certification-item padd-15" @click="openPopup(cert.image)">
+        <div class="row cert-grid">
+          <div
+            v-for="(cert, index) in certifications"
+            :key="index"
+            class="certification-item padd-15"
+            @click="handleClick(cert)"
+          >
             <div class="certification-item-inner shadow-dark">
               <div class="certification-img">
                 <NuxtImg :src="cert.image" :alt="cert.title" />
@@ -65,14 +70,27 @@ const certifications = [
     dates: 'June 2022',
     image: '/images/certifications/certificate_5.jpg'
   },
+  {
+    title: 'English level',
+    institution: 'EF SET',
+    dates: 'October 2024',
+    image: '/images/certifications/certificate_6.jpg',
+    pdf: '/documents/certifications/efset_certificate.pdf'
+  }
 ]
 
 const popupVisible = ref(false)
 const currentImage = ref('')
+const currentPdf = ref('')
 
-const openPopup = (image) => {
-  currentImage.value = image
-  popupVisible.value = true
+const handleClick = (cert) => {
+  if (cert.pdf) {
+    window.open(cert.pdf, '_blank')
+  } else {
+    currentImage.value = cert.image
+    currentPdf.value = ''
+    popupVisible.value = true
+  }
 }
 
 const closePopup = () => {
@@ -81,6 +99,35 @@ const closePopup = () => {
 </script>
 
 <style scoped>
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.certification-item {
+  flex: 1 1 calc(33.333% - 1rem);
+  box-sizing: border-box;
+}
+.certification-item-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.certification-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.certification-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.certification-info {
+  flex: 1;
+  padding: 0.5rem;
+}
+
 .popup-img {
   position: fixed;
   top: 0;
@@ -93,11 +140,10 @@ const closePopup = () => {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2000;
 }
-
 .popup-img img {
-  /* width: 100%; */
-  /* height: 100%; */
   object-fit: contain;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .close-btn {

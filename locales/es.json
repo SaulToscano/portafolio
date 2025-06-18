@@ -8,17 +8,17 @@
   },
   "pages": {
     "home": {
-      "presentation": "Hola, mi nombre es",
+      "presentation": "Hola, soy",
       "im": "Soy un",
       "typed": "Desarrollador Full-stack",
-      "description": "Desarrollador Full-stack, soy una persona seria, comprometida con mi trabajo, un poco perfeccionista, Me gusta que mi trabajo sea de calidad, y siempre busco la mejora continua, con amplia experiencia en desarrollo web y microservicios.",
+      "description": "Desarrollador Full-Stack con amplia experiencia en desarrollo web y microservicios. Me caracterizo por ser una persona comprometida, enfocada en la calidad y en la mejora continua. Tengo un enfoque perfeccionista que me impulsa a entregar siempre el mejor resultado posible.",
       "contact": "Contacto"
     },
     "about": {
       "about": "Sobre mi",
       "im": "Soy",
       "fullstack": "Desarrollador Full-stack",
-      "description": "Soy ingeniero en sistemas computacionales y soy desarrollador fullstack, web, api's y mobile. Siempre buscando las mejores herramientas y prácticas para brindarles a mis clientes los mejores productos del mercado, comprometido y dedicado, buscando siempre ser mejor cada día.",
+      "description": "Ingeniero en Sistemas Computacionales con experiencia en desarrollo web, APIs y aplicaciones móviles. Me especializo en elegir las mejores herramientas y seguir prácticas de vanguardia para ofrecer productos digitales de alta calidad. Además, diseño y maquetación en Figma para prototipos interactivos y visuales claros. Soy una persona comprometida y dedicada, siempre en busca de mejorar cada día y superar las expectativas de mis clientes.",
       "birthday": "Año de nacimiento",
       "birthday_date": "11 de Agosto, 1996",
       "age": "Edad",
@@ -31,11 +31,19 @@
       "technologies": "Tecnologias y herramientas",
       "education": "Educacion",
       "uni_title": "Instituto Tecnologico de Tijuana",
-      "uni_p": "En estos 4 años de carrera, mejoré mis habilidades en programación en C# y obtuve otras nuevas; como topicos de HTML, React y SQL Server.",
-      "bootcamp_p": "En este bootcamp de un año, amplié mis conocimientos de HTML, JS y CSS, además de mejorar el desarrollo React, asíncrono y backend.",
+      "uni_p_1": "• Durante mis 4 años de carrera, consolidé mis habilidades en C# y adquirí conocimientos en HTML, React y SQL Server.",
+      "uni_p_2": "• Participé en proyectos académicos que reforzaron buenas prácticas de programación y arquitecturas de software.",
+      "bootcamp_p_1": "• En un intensivo de 1 año, profundicé en HTML, JavaScript y CSS, y perfeccioné mis destrezas en React, programación asíncrona y desarrollo backend.",
+      "bootcamp_p_2": "• Desarrollé aplicaciones full‑stack que integraban front, APIs REST y bases de datos.",
       "experience": "Experiencia",
-      "vasoking_p": "En mi puesto de trabajo estuve a cargo de captura, creación de api's y microservicio usando java, springboot, configuración y mantenimiento de bases de datos, mantenimiento de servidores Ubuntu, despliegue de aplicaciones en servidor, etc.",
-      "sbc_p": "En este trabajo estuve a cargo de la página web, como administrador web Ecommerce desarrolle los productos, nuevas páginas, precios, banners, nuevas implementaciones, portales de pago, etc. Como mis responsabilidades como backend cree módulos en js y ts en express y nest, también mantuve apis en estos frameworks, y en C# y java."
+      "vasoking_p_1": "• Diseño e implementación de APIs y microservicios en Java con Spring Boot.",
+      "vasoking_p_2": "• Configuración y mantenimiento de bases de datos (SQL y NoSQL).",
+      "vasoking_p_3": "• Administración de servidores Ubuntu y despliegue de aplicaciones en entornos productivos.",
+      "sbc_p_1": "• Desarrollo y mantenimiento del sitio eCommerce: creación de productos, páginas, sistemas de precios, banners y portales de pago.",
+      "sbc_p_2": "• En backend, construcción de módulos en JavaScript y TypeScript con Express y NestJS, así como mantenimiento de APIs en C# y Java.",
+      "wit_p_1": "• Diseño y maquetación de interfaces en Figma.",
+      "wit_p_2": "• Desarrollo frontend y backend de APIs y sitios web según requerimientos de cliente.",
+      "wit_p_3": "• Tareas de DevOps: gestión y monitoreo de servicios en AWS, creación de entornos de desarrollo y producción."
     },
     "certificates": {
       "certificates": "Certificados",

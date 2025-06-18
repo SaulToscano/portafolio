@@ -25,7 +25,7 @@
                   <p>{{ $t('pages.about.age') }}: <span>28</span></p>
                 </div>
                 <div class="info-item padd-15">
-                  <p>GitHub: <span>github.com/SaulToscano</span></p>
+                  <p>GitHub: <a href="https://github.com/SaulToscano" target="_blank"><span>github.com/SaulToscano</span></a></p>
                 </div>
                 <div class="info-item padd-15">
                   <p>Email: <span>saul.toscano.robles@gmail.com</span></p>
@@ -53,9 +53,12 @@
             <!-- Skills -->
             <div class="skills padd-15">
               <div class="row">
-                <fragments-skill name="Frontend" percentage="80" />
+                <fragments-skill name="Frontend" percentage="90" />
                 <fragments-skill name="Backend" percentage="80" />
+                <fragments-skill name="Mobile" percentage="70" />
+                <fragments-skill name="DevOps" percentage="65" />
                 <fragments-skill name="SysAdmin" percentage="70" />
+                <fragments-skill name="UI/UX (Figma)" percentage="70" />
               </div>
             </div>
 
@@ -72,6 +75,7 @@
                 <fragments-technologies name="logos:java" tooltip="Java" />
                 <fragments-technologies name="devicon:csharp" tooltip="C#" />
                 <fragments-technologies name="vscode-icons:file-type-js-official" tooltip="JS" />
+                <fragments-technologies name="devicon:typescript" tooltip="TS" />
                 <fragments-technologies name="logos:react" tooltip="React" />
                 <fragments-technologies name="vscode-icons:file-type-vue" tooltip="Vue" />
                 <fragments-technologies name="vscode-icons:file-type-angular" tooltip="Angular" />
@@ -91,6 +95,7 @@
                 <fragments-technologies name="devicon:git" tooltip="Git" />
                 <fragments-technologies name="mdi:github" tooltip="Github" color="#214087" />
                 <fragments-technologies name="logos:docker-icon" tooltip="Docker" />
+                <fragments-technologies name="logos:figma" tooltip="Figma" />
                 <fragments-technologies name="devicon:jiraalign" tooltip="Jira" />
                 <fragments-technologies name="logos:confluence" tooltip="Confluence" />
 
@@ -113,9 +118,12 @@
                       </h3>
                       <h4 class="timeline-title">{{ $t('pages.about.uni_title') }}</h4>
                       <p class="timeline-text">
-                        {{ $t('pages.about.uni_p') }}
+                        {{ $t('pages.about.uni_p_1') }}
+                        <br /><br />
+                        {{ $t('pages.about.uni_p_2') }}
                       </p>
                     </div>
+                    <!-- timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
@@ -123,7 +131,9 @@
                       </h3>
                       <h4 class="timeline-title">Bootcamp SoyHenry</h4>
                       <p class="timeline-text">
-                        {{ $t('pages.about.bootcamp_p') }}
+                        {{ $t('pages.about.bootcamp_p_1') }}
+                        <br/><br/>
+                        {{ $t('pages.about.bootcamp_p_2') }}
                       </p>
                     </div>
                   </div>
@@ -139,14 +149,18 @@
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
-                        <Icon name="ri:calendar-fill" /> Feb 2020 - Dev 2020
+                        <Icon name="ri:calendar-fill" /> Nov 2024 - May 2024
                       </h3>
-                      <h4 class="timeline-title">Backend Developer - Vasoking Mexico</h4>
+                      <h4 class="timeline-title">Fullstack Developer - Warlocks-IT</h4>
                       <p class="timeline-text">
-                        {{ $t('pages.about.vasoking_p') }}
+                        {{ $t('pages.about.wit_p_1') }}
+                        <br><br>
+                        {{ $t('pages.about.wit_p_2') }}
+                        <br><br>
+                        {{ $t('pages.about.wit_p_3') }}
                       </p>
                     </div>
-
+                    <!-- timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
@@ -154,7 +168,24 @@
                       </h3>
                       <h4 class="timeline-title">Fullstack Developer - Sol Beauty & Care</h4>
                       <p class="timeline-text">
-                        {{ $t('pages.about.sbc_p') }}
+                        {{ $t('pages.about.sbc_p_1') }}
+                        <br><br>
+                        {{ $t('pages.about.sbc_p_2') }}
+                      </p>
+                    </div>
+                    <!-- timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <Icon name="ri:calendar-fill" /> Feb 2020 - Dev 2020
+                      </h3>
+                      <h4 class="timeline-title">Backend Developer - Vasoking Mexico</h4>
+                      <p class="timeline-text">
+                        {{ $t('pages.about.vasoking_p_1') }}
+                        <br><br>
+                        {{ $t('pages.about.vasoking_p_2') }}
+                        <br><br>
+                        {{ $t('pages.about.vasoking_p_3') }}
                       </p>
                     </div>
                   </div>
@@ -169,10 +200,13 @@
 </template>
 
 <script setup>
-import { useHead } from 'nuxt/app';
+import { useHead } from '#imports';
+import { useI18n } from 'vue-i18n';
+
+const { getLocaleCookie } = useI18n()
 
 const openPDF = () => {
-  window.open('/Resume.pdf', '_blank');
+  getLocaleCookie() === 'en' ? window.open('/Resume.pdf', '_blank') : window.open('/Resume.pdf', '_blank');
 };
 
 useHead({

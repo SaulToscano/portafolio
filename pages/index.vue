@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { useHead } from 'nuxt/app';
+import { useHead } from '#imports';
 import { onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n'
 

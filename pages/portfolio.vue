@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { useHead } from 'nuxt/app';
+import { useHead } from '#imports';
 
 useHead({
   title: "Portfolio",
