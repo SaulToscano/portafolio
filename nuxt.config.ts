@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     pageTransition: {name: 'page', mode: 'default'},
+    baseURL: '/portafolio/'
+  },
+  ssr: false,
+  nitro: {
+    preset: 'static'
   },
   modules: [
     '@nuxtjs/i18n',
