@@ -30,30 +30,22 @@
 
 <script setup>
 const proyects = [
-  {
+  /* {
     title: "Ecommerce Webpage",
     technologies: "Next, JS, React",
     date: "",
     image: "/images/projects/project_1.jpg",
     demo: "https://web.stoscano.com/",
     code: ""
-  },
-  {
+  }, */
+  /* {
     title: "Ecommerce Dashboard",
     technologies: "Nuxt, js, Vue",
     date: "",
     image: "/images/projects/project_2.jpg",
     demo: "https://dashboard.stoscano.com/",
     code: ""
-  },
-  {
-    title: "Java Login",
-    technologies: "Java, Springboot",
-    date: "",
-    image: "/images/projects/project_3.jpg",
-    demo: "https://login.stoscano.com/home",
-    code: ""
-  },
+  }, */
   {
     title: "Pokedex",
     technologies: "JS, Vue",
