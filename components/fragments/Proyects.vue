@@ -30,14 +30,14 @@
 
 <script setup>
 const proyects = [
-  /* {
+  {
     title: "Ecommerce Webpage",
-    technologies: "Next, JS, React",
+    technologies: "Next, JS, TS, React",
     date: "",
     image: "/images/projects/project_1.jpg",
-    demo: "https://web.stoscano.com/",
+    demo: "https://ecommerce-frontend-l9ns.onrender.com",
     code: ""
-  }, */
+  },
   /* {
     title: "Ecommerce Dashboard",
     technologies: "Nuxt, js, Vue",
