@@ -17,6 +17,9 @@ export default defineNuxtConfig({
     'nuxt-viewport',
     '@nuxt/icon',
   ],
+  image: {
+    provider: 'vercel'
+  },
   i18n: {
     // Define locales
     locales: [
