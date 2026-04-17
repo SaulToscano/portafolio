@@ -21,7 +21,7 @@
 						</div>
 
 						<div class="home-img padd-15">
-							<NuxtImg src="/images/myPhoto1.jpg" alt="profile-picture" />
+							<img src="/images/myPhoto1.jpg" alt="profile-picture" />
 						</div>
 					</div>
 				</div>
@@ -31,7 +31,7 @@
 <script setup>
 import { useHead } from '#imports';
 import { onMounted, ref, watch } from 'vue';
-import { useI18n } from 'vue-i18n'
+import { useI18n } from 'vue-i18n';
 
 const { t, locale } = useI18n()
 const typedElement = ref(null);

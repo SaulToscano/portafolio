@@ -5,7 +5,7 @@
       <span class="close-btn" @click="closePopup">
         <Icon name="material-symbols:close" />
       </span>
-      <NuxtImg :src="currentImage" alt="Certification Image" />
+      <img :src="currentImage" alt="Certification Image" />
     </div>
 
     <!-- Certifications Content -->
@@ -21,7 +21,7 @@
           >
             <div class="certification-item-inner shadow-dark">
               <div class="certification-img">
-                <NuxtImg :src="cert.image" :alt="cert.title" />
+                <img :src="cert.image" :alt="cert.title" />
               </div>
               <div class="certification-info">
                 <h4>{{ cert.title }}</h4>

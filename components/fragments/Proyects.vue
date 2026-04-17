@@ -3,7 +3,7 @@
   <div v-for="(proyect, index) in proyects" :key="index" class="portfolio-item padd-15">
     <div class="portfolio-item-inner shadow-dark">
       <div class="portfolio-img">
-        <NuxtImg :src="proyect.image" :alt="proyect.title" height="200px" />
+        <img :src="proyect.image" :alt="proyect.title" height="200px" />
       </div>
       <div class="portfolio-info">
         <div class="portfolio-title-date">
