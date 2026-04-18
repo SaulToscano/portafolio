@@ -47,6 +47,14 @@ const proyects = [
     code: ""
   }, */
   {
+    title: "Admin Dashboard",
+    technologies: "Angular, Primeng",
+    date: "",
+    image: "/images/projects/project_8.jpg",
+    demo: "https://admin-dashboard-mu-peach-76.vercel.app/",
+    code: ""
+  },
+  {
     title: "Pokedex",
     technologies: "JS, Vue",
     date: "",
