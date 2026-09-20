@@ -21,7 +21,6 @@ export default defineNuxtConfig({
     provider: 'vercel'
   },
   i18n: {
-    // Define locales
     locales: [
       { code: 'en', name: 'English', file: 'en.json' },
       { code: 'es', name: 'Spanish', file: 'es.json' }
@@ -29,10 +28,10 @@ export default defineNuxtConfig({
     bundle: {
       optimizeTranslationDirective: false,
     },
-    defaultLocale: 'es', // Default locale
-    lazy: true, // Enable lazy loading of translations
+    defaultLocale: 'es',
+    lazy: true,
     //langDir: 'locales/', // Path to the translation files
-    strategy: 'no_prefix', // URL strategy (prefixes /en/ or /fr/ in routes)
+    strategy: 'no_prefix',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
