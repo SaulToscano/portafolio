@@ -1,7 +1,7 @@
 <template>
   <div :class="{'style-switcher': true, 'open': isSwitcherOpen}">
     <button class="style-switcher-toggler s-icon toggler-button" @click="toggleSwitcher">
-      <Icon name="line-md:cog-filled-loop" />
+      <Icon name="mdi:cog" class="spin-icon" />
     </button>
     <div class="day-night s-icon toggler-button" @click="toggleDayNight">
       <Icon :name="isDarkMode ? 'ph:sun-fill' : 'akar-icons:moon-fill'" />
@@ -75,5 +75,18 @@ onMounted(() => {
 	display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.spin-icon {
+  animation: rotateGear 10s linear infinite;
+}
+
+@keyframes rotateGear {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>
