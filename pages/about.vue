@@ -22,7 +22,7 @@
                   <p>{{ $t('pages.about.birthday') }}: <span>{{ $t('pages.about.birthday_date') }}</span></p>
                 </div>
                 <div class="info-item padd-15">
-                  <p>{{ $t('pages.about.age') }}: <span>28</span></p>
+                  <p>{{ $t('pages.about.age') }}: <span>{{ age }}</span></p>
                 </div>
                 <div class="info-item padd-15">
                   <p>GitHub: <a href="https://github.com/SaulToscano" target="_blank"><span>github.com/SaulToscano</span></a></p>
@@ -31,7 +31,7 @@
                   <p>Email: <span>saul.toscano.robles@gmail.com</span></p>
                 </div>
                 <div class="info-item padd-15">
-                  <p>{{ $t('pages.about.location') }}: <span>Mexico</span></p>
+                  <p>{{ $t('pages.about.location') }}: <span>México</span></p>
                 </div>
                 <div class="info-item padd-15">
                   <p>{{ $t('pages.about.city') }}: <span>Tijuana</span></p>
@@ -56,20 +56,17 @@
                 <fragments-skill name="Frontend" percentage="90" />
                 <fragments-skill name="Backend" percentage="80" />
                 <fragments-skill name="Mobile" percentage="70" />
-                <fragments-skill name="DevOps" percentage="65" />
+                <fragments-skill name="DevOps" percentage="85" />
                 <fragments-skill name="SysAdmin" percentage="70" />
                 <fragments-skill name="UI/UX (Figma)" percentage="70" />
               </div>
             </div>
-
           </div>
 
           <div class="row">
             <div class="technologies-tools padd-15">
               <h3 class="title">{{ $t('pages.about.technologies') }}</h3>
-
               <div class="row">
-
                 <fragments-technologies name="vscode-icons:file-type-html" tooltip="HTML" />
                 <fragments-technologies name="vscode-icons:file-type-css" tooltip="CSS" />
                 <fragments-technologies name="logos:java" tooltip="Java" />
@@ -79,9 +76,11 @@
                 <fragments-technologies name="logos:react" tooltip="React" />
                 <fragments-technologies name="vscode-icons:file-type-vue" tooltip="Vue" />
                 <fragments-technologies name="vscode-icons:file-type-angular" tooltip="Angular" />
+                <fragments-technologies name="vscode-icons:file-type-light-expo" tooltip="Expo" />
                 <fragments-technologies name="devicon:nodejs" tooltip="Node" />
                 <fragments-technologies name="simple-icons:express" tooltip="Express" color="#214087" />
                 <fragments-technologies name="logos:nestjs" tooltip="NestJS" />
+                <fragments-technologies name="logos:spring" tooltip="Springboot" />
                 <fragments-technologies name="logos:swagger" tooltip="Swagger" />
                 <fragments-technologies name="logos:jest" tooltip="Jest" />
                 <fragments-technologies name="devicon:npm" tooltip="NPM" />
@@ -98,7 +97,6 @@
                 <fragments-technologies name="logos:figma" tooltip="Figma" />
                 <fragments-technologies name="devicon:jiraalign" tooltip="Jira" />
                 <fragments-technologies name="logos:confluence" tooltip="Confluence" />
-
               </div>
             </div>
           </div>
@@ -110,7 +108,6 @@
               <div class="row">
                 <div class="timeline-box padd-15">
                   <div class="timeline shadow-dark">
-                    <!-- timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
@@ -123,7 +120,6 @@
                         {{ $t('pages.about.uni_p_2') }}
                       </p>
                     </div>
-                    <!-- timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
@@ -145,11 +141,10 @@
               <div class="row">
                 <div class="timeline-box padd-15">
                   <div class="timeline shadow-dark">
-                    <!-- timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
-                        <Icon name="ri:calendar-fill" /> Nov 2024 - May 2024
+                        <Icon name="ri:calendar-fill" /> Nov 2024 - May 2025
                       </h3>
                       <h4 class="timeline-title">Fullstack Developer - Warlocks-IT</h4>
                       <p class="timeline-text">
@@ -160,7 +155,6 @@
                         {{ $t('pages.about.wit_p_3') }}
                       </p>
                     </div>
-                    <!-- timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
@@ -173,11 +167,10 @@
                         {{ $t('pages.about.sbc_p_2') }}
                       </p>
                     </div>
-                    <!-- timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
-                        <Icon name="ri:calendar-fill" /> Feb 2020 - Dev 2020
+                        <Icon name="ri:calendar-fill" /> Feb 2020 - Dec 2020
                       </h3>
                       <h4 class="timeline-title">Backend Developer - Vasoking Mexico</h4>
                       <p class="timeline-text">
@@ -202,12 +195,28 @@
 <script setup>
 import { useHead } from '#imports';
 import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
 const { getLocaleCookie } = useI18n()
 
 const openPDF = () => {
   getLocaleCookie() === 'en' ? window.open('/Resume_EN.pdf', '_blank') : window.open('/Resume_ES.pdf', '_blank');
 };
+
+const birthDate = '1996-08-11';
+
+const age = computed(() => {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  
+  let currentAge = today.getFullYear() - birth.getFullYear();
+  const monthDifference = today.getMonth() - birth.getMonth();
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+    currentAge--;
+  }
+  
+  return currentAge;
+});
 
 useHead({
   title: "About me",
